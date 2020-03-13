@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
 const ContactForm = () => {
-  const [data, setData] = useState();
+  const [data, setData] = useState({
+    name: 'alex'
+  });
   const { register, errors, handleSubmit, reset } = useForm({
     mode: "onBlur"
   });
@@ -69,9 +71,6 @@ const ContactForm = () => {
         )}
         <button type="submit" name="submit">Submit</button>
       </form>
-
-          
-
     </div>
   );
 };

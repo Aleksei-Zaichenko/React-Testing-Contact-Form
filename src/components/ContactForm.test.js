@@ -34,6 +34,4 @@ test("Contact form accepts and processes the inputted info", () =>{
 
     const submitButton = getByText(/submit/i);
     fireEvent.click(submitButton)
-
-    console.log(firstNameInput);
 });
